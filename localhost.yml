@@ -1,0 +1,9 @@
+---
+- name: Setup mac-os-x
+  hosts: localhost
+  connection: local
+  vars_files:
+    - group_vars/localhost.yml
+  roles:
+    - { role: homebrew, tags: [ homebrew ] }
+    - { role: rbenv, tags: [ rbenv ] }

@@ -1,0 +1,23 @@
+---
+- name: Install ruby
+  homebrew:
+    name: "{{ item.name }}"
+    install_options: "{{ item.install_options | default(omit) }}"
+    state: "{{ item.state | default('latest') }}"
+  with_items:
+    - "{{ ruby_packages }}"
+
+- name: set rbenv env file
+  become: true
+  become_method: sudo
+  copy:
+    src: rbenv.sh
+    dest: /etc/profile.d
+    mode: 0775
+
+- name: install ruby with rbenv
+  shell: bash -lc "CONFIGURE_OPTS="--disable-install-rdoc" rbenv install -f {{ ruby_version }}"
+
+- name: "set ruby {{ ruby_version }} for system"
+  shell: bash -lc "rbenv global {{ ruby_version }} && rbenv rehash"
+

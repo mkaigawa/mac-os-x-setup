@@ -1,0 +1,11 @@
+homebrew_packages:
+  - { name: git }
+  - { name: tig }
+  - { name: zsh, install_options: disable-etcdir }
+  - { name: wget }
+  - { name: curl }
+  - { name: tree }
+  - { name: tmux }
+  - { name: lua }
+  - { name: ricty }
+  - { name: packer }
