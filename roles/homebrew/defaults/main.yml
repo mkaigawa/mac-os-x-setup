@@ -9,3 +9,7 @@ homebrew_packages:
   - { name: lua }
   - { name: ricty }
   - { name: packer }
+
+homebrew_cask_packages:
+  - { name: virtualbox }
+  - { name: vagrant }

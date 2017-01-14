@@ -25,3 +25,11 @@
     state: "{{ item.state | default('latest') }}"
   with_items:
     - "{{ homebrew_packages }}"
+
+- name: Install homebrew cask packages
+  homebrew_cask:
+    name: "{{ item.name }}"
+    install_options: "{{ item.install_options | default(omit) }}"
+    state: "{{ item.state | default('present') }}"
+  with_items:
+    - "{{ homebrew_cask_packages }}"
