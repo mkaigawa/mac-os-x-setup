@@ -1,15 +1,14 @@
 homebrew_packages:
   - { name: git }
-  - { name: tig }
-  - { name: zsh, install_options: disable-etcdir }
+  # - { name: zsh, install_options: disable-etcdir }
+  - { name: zsh }
   - { name: wget }
   - { name: curl }
   - { name: tree }
-  - { name: tmux }
-  - { name: lua }
   - { name: ricty }
   - { name: packer }
 
 homebrew_cask_packages:
   - { name: virtualbox }
   - { name: vagrant }
+  - { name: docker }

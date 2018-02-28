@@ -16,3 +16,12 @@ if [ $? -ne 0 ]; then
 else
     echo "ansible installed."
 fi
+
+which xcode-select > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+    echo "install xcode-select."
+    sudo xcode-select --install
+else
+    echo "xcode-select installed."
+fi
+
