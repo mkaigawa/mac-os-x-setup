@@ -1,6 +1,2 @@
-[all:vars]
-git_user=mkaigawa
-git_email=mkaigawa@xxxxxx.xxx
-
 [local]
 127.0.0.1

@@ -1,0 +1,23 @@
+---
+- name: Install golang
+  homebrew:
+    name: "{{ item.name }}"
+    install_options: "{{ item.install_options | default(omit) }}"
+    state: "{{ item.state | default('latest') }}"
+  with_items:
+    - "{{ golang_packages }}"
+
+- name: set goenv env file
+  become: true
+  become_method: sudo
+  copy:
+    src: goenv.sh
+    dest: /etc/profile.d
+    mode: 0775
+
+- name: install go with goenv
+  shell: goenv install {{ golang_version }}"
+
+- name: "set go {{ golang_version }} for system"
+  shell: goenv global {{ golang_version }} && goenv rehash"
+
