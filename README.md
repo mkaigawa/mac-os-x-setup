@@ -5,6 +5,7 @@
 - ansible
 - xcode-select
 
+### install command
     $ ./requires.sh
 
 ## ansible playbook
