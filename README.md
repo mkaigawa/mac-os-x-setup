@@ -1,4 +1,4 @@
-# macos-x setup
+# macOS setup
 
 ## Requirements
 - pip
