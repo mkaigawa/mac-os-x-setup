@@ -3,8 +3,8 @@
 # install
 which pip > /dev/null 2>&1
 if [ $? -ne 0 ]; then
-    echo "install php."
-    sudo easy_install php
+    echo "install pip."
+    sudo easy_install pip
 else
     echo "pip installed."
 fi
@@ -24,4 +24,3 @@ if [ $? -ne 0 ]; then
 else
     echo "xcode-select installed."
 fi
-
