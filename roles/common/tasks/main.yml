@@ -4,4 +4,4 @@
 - include: vagrant.yml
 - include: ruby.yml
 - include: golang.yml
-- include: embulk.yml
+# - include: embulk.yml

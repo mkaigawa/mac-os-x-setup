@@ -16,8 +16,8 @@
     mode: 0775
 
 - name: install go with goenv
-  shell: goenv install {{ golang_version }}"
+  shell: goenv install -f {{ golang_version }}
 
-- name: "set go {{ golang_version }} for system"
-  shell: goenv global {{ golang_version }} && goenv rehash"
+- name: set go {{ golang_version }} for system
+  shell: goenv global {{ golang_version }} && goenv rehash
 

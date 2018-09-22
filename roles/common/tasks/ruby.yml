@@ -18,6 +18,6 @@
 - name: install ruby with rbenv
   shell: bash -lc "CONFIGURE_OPTS="--disable-install-rdoc" rbenv install -f {{ ruby_version }}"
 
-- name: "set ruby {{ ruby_version }} for system"
+- name: set ruby {{ ruby_version }} for system"
   shell: bash -lc "rbenv global {{ ruby_version }} && rbenv rehash"
 

@@ -1,18 +1,22 @@
+homebrew_taps:
+  - caskroom/fonts
+
 homebrew_packages:
-  - { name: git }
-  - { name: zsh, install_options: disable-etcdir }
-  - { name: wget }
   - { name: curl }
+  - { name: git }
+  - { name: tig }
+  - { name: wget }
   - { name: tree }
-  - { name: ricty }
   - { name: packer }
   - { name: docker }
+  - { name: zsh, install_options: disable-etcdir }
 
 homebrew_cask_packages:
   - { name: virtualbox }
   - { name: vagrant }
   - { name: java }
   - { name: docker }
+  - { name: font-source-code-pro }
 
 git_user: mkaigawa
 git_email: mkaigawa@xxxxxx.com

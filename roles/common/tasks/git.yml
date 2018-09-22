@@ -1,5 +1,5 @@
 ---
-- name git config name setting
+- name: git config name setting
   git_config:
     name: user.name
     scope: global

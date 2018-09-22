@@ -1,13 +1,4 @@
 ---
-- name: Change /usr/local owner to "{{ ansible_user_id }}"
-  become: true
-  become_method: sudo
-  file:
-    dest: /usr/local
-    owner: "{{ ansible_user_id }}"
-    group: admin
-    recurse: yes
-
 - name: Install homebrew
   shell: |
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -17,6 +8,10 @@
 - name: Update homebrew
   homebrew:
     update_homebrew: yes
+
+# - name: Install homebrew taps
+#   homebrew_tap: tap={{ item }} state=present
+#   with_items: '{{ homebrew_taps }}'
 
 - name: Install homebrew packages
   homebrew:

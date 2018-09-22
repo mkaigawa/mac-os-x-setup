@@ -1,20 +1,14 @@
 ---
-- name: download embulk package
-  get_url:
-      url: https://dl.embulk.org/embulk-latest.jar
-      dest: ~/.embulk/bin/embulk
-      force: yes
-  register: downloaded_embulk
-
 - name: check embulk already exsists
   stat:
     path: ~/.embulk/bin/embulk
   register: st
 
-- name: check embulk
-  file:
-      path: ~/.embulk/bin/embulk
-      mode: 0744
+- name: download embulk package
+  get_url:
+      url: https://dl.embulk.org/embulk-latest.jar
+      dest: ~/.embulk/bin/embulk
+      force: yes
   when: not st.stat.exsits
 
 - name: install embulk plugins
