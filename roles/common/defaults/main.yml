@@ -1,0 +1,43 @@
+homebrew_taps:
+  - caskroom/fonts
+
+homebrew_packages:
+  - { name: curl }
+  - { name: git }
+  - { name: tig }
+  - { name: wget }
+  - { name: tree }
+  - { name: packer }
+  - { name: docker }
+  - { name: zsh, install_options: disable-etcdir }
+
+homebrew_cask_packages:
+  - { name: virtualbox }
+  - { name: vagrant }
+  - { name: java }
+  - { name: docker }
+  - { name: font-source-code-pro }
+
+git_user: mkaigawa
+git_email: mkaigawa@xxxxxx.com
+
+ruby_packages:
+  - { name: rbenv }
+  - { name: ruby-build }
+  - { name: rbenv-binstubs }
+  - { name: rbenv-gemset }
+ruby_version: 2.5.0
+
+golang_packages:
+  - { name: goenv }
+golang_version: 1.10.0
+
+embulk_gems:
+  - { name: embulk-filter-column, state: latest }
+  - { name: embulk-filter-query_string, state: latest }
+  - { name: embulk-filter-row, state: latest }
+  - { name: embulk-output-command, state: latest }
+  - { name: embulk-output-mysql, state: latest }
+  - { name: embulk-parser-apache-custom-log, state: latest }
+  - { name: embulk-plugin-filter-grep, state: latest }
+  - { name: embulk-parser-ltsv, state: latest }

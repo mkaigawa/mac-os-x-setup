@@ -5,6 +5,4 @@
   vars_files:
     - group_vars/localhost.yml
   roles:
-    - { role: homebrew, tags: [ homebrew ] }
-    - { role: vagrant, tags: [ vagrant ] }
-    - { role: rbenv, tags: [ rbenv ] }
+    - { role: common, tags: [ common ] }

@@ -1,0 +1,18 @@
+---
+- name: check embulk already exsists
+  stat:
+    path: ~/.embulk/bin/embulk
+  register: st
+
+- name: download embulk package
+  get_url:
+      url: https://dl.embulk.org/embulk-latest.jar
+      dest: ~/.embulk/bin/embulk
+      force: yes
+  when: not st.stat.exsits
+
+- name: install embulk plugins
+  shell: embulk gem install {{ item.name }}
+  with_items:
+      - "{{ embulk_gems }}"
+

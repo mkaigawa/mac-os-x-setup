@@ -1,0 +1,7 @@
+---
+- include: homebrew.yml
+- include: git.yml
+- include: vagrant.yml
+- include: ruby.yml
+- include: golang.yml
+# - include: embulk.yml
