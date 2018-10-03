@@ -9,6 +9,7 @@ homebrew_packages:
   - { name: tree }
   - { name: packer }
   - { name: docker }
+  - { name: grep }
   - { name: zsh, install_options: disable-etcdir }
 
 homebrew_cask_packages:
