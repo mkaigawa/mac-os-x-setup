@@ -1,5 +1,7 @@
 homebrew_taps:
   - caskroom/fonts
+  - osx-cross/avr
+  - PX4/homebrew-px4
 
 homebrew_packages:
   - { name: curl }
@@ -11,6 +13,10 @@ homebrew_packages:
   - { name: docker }
   - { name: grep }
   - { name: zsh, install_options: disable-etcdir }
+  - { name: avr-gcc }
+  - { name: dfu-programmer }
+  - { name: gcc-arm-none-eabi }
+  - { name: avrdude }
 
 homebrew_cask_packages:
   - { name: virtualbox }
@@ -18,6 +24,7 @@ homebrew_cask_packages:
   - { name: java }
   - { name: docker }
   - { name: font-source-code-pro }
+  - { name: caskroom/drivers/qmk-toolbox }
 
 git_user: mkaigawa
 git_email: mkaigawa@xxxxxx.com
