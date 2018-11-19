@@ -23,6 +23,7 @@ homebrew_cask_packages:
   - { name: vagrant }
   - { name: java }
   - { name: docker }
+  - { name: docker-toolbox }
   - { name: font-source-code-pro }
   - { name: caskroom/drivers/qmk-toolbox }
 
