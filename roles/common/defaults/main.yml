@@ -16,7 +16,8 @@ homebrew_packages:
   - { name: avr-gcc }
   - { name: dfu-programmer }
   - { name: gcc-arm-none-eabi }
-  - { name: avrdude }
+  - { name: avrdude 
+  - { name: highlight }
 
 homebrew_cask_packages:
   - { name: virtualbox }
@@ -39,7 +40,7 @@ ruby_version: 2.5.0
 
 golang_packages:
   - { name: goenv }
-golang_version: 1.10.0
+golang_version: 1.11.0
 
 embulk_gems:
   - { name: embulk-filter-column, state: latest }
