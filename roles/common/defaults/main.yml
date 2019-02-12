@@ -22,7 +22,7 @@ homebrew_packages:
 homebrew_cask_packages:
   - { name: virtualbox }
   - { name: vagrant }
-  - { name: java }
+  # - { name: java }
   - { name: docker }
   - { name: docker-toolbox }
   - { name: font-source-code-pro }
