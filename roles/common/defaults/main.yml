@@ -18,6 +18,7 @@ homebrew_packages:
   - { name: gcc-arm-none-eabi }
   - { name: avrdude 
   - { name: highlight }
+  - { name: tmux }
 
 homebrew_cask_packages:
   - { name: virtualbox }
