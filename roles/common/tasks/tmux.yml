@@ -1,0 +1,21 @@
+---
+- name: check tmux-powerline directory
+  stat:
+    path: ~/tmux2/tmux-powerline
+  register: tmux
+
+- name: download tmux-powerline
+  git:
+    repo: git://github.com/erikw/tmux-powerline.git
+    dest: ~/tmux2/tmux-powerline
+  when: not tmux.stat.exists
+
+- name: download powerline fonts
+  git:
+    repo: git://github.com/powerline/fonts.git
+    dest: ~/tmux2/fonts
+  when: not tmux.stat.exists
+
+- name: font install
+  shell: ~/tmux2/fonts/install.sh
+  when: not tmux.stat.exists
