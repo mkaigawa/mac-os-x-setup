@@ -25,7 +25,6 @@ homebrew_cask_packages:
   - { name: virtualbox }
   - { name: vagrant }
   - { name: docker }
-  - { name: dash }
   - { name: docker-toolbox }
   - { name: font-source-code-pro }
   - { name: caskroom/drivers/qmk-toolbox }
