@@ -24,14 +24,14 @@ homebrew_packages:
 homebrew_cask_packages:
   - { name: virtualbox }
   - { name: vagrant }
-  # - { name: java }
   - { name: docker }
+  - { name: dash }
   - { name: docker-toolbox }
   - { name: font-source-code-pro }
   - { name: caskroom/drivers/qmk-toolbox }
 
 git_user: mkaigawa
-git_email: mkaigawa@xxxxxx.com
+git_email: mkaigawa99@gmail.com
 
 ruby_packages:
   - { name: rbenv }
