@@ -10,3 +10,27 @@
     name: user.email
     scope: global
     value: "{{ git_email }}"
+
+- name: git config core.pager setting
+  git_config:
+    name: core.pager
+    scope: global
+    value: "less -R"
+
+- name: git config core.editor setting
+  git_config:
+    name: core.pager
+    scope: global
+    value: "vim -c \"set fenc=utf-8\""
+
+- name: git config core.quotepath setting
+  git_config:
+    name: core.quotepath
+    scope: global
+    value: "false"
+    
+- name: git config color.ui setting
+  git_config:
+    name: color.ui
+    scope: global
+    value: "true"
