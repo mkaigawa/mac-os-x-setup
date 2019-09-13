@@ -1,0 +1,26 @@
+---
+- name: check nodebrew directory
+  stat:
+    path: ~/.nodebrew
+  register: node
+
+- name: create nodebrew directory
+  file:
+    path: ~/.nodeberw
+    state: directory
+    mode: 0755
+  when: not node.stat.exists
+
+- name: install nodebrew
+  become: true
+  become_method: sudo
+  shell: nodebrew install-binary stable
+  when: not node.stat.exists
+
+- name: set nodebrew profile.d file
+  become: true
+  become_method: sudo
+  copy:
+    src: nodebrew.sh
+    dest: /etc/profile.d
+    mode: 0775
