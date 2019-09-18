@@ -45,6 +45,9 @@ golang_packages:
   - { name: goenv }
 golang_version: 1.11.10
 
+node_version: 12.10.0
+ionic_version: 4.9.0
+
 embulk_gems:
   - { name: embulk-filter-column, state: latest }
   - { name: embulk-filter-query_string, state: latest }

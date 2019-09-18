@@ -24,3 +24,12 @@
     src: nodebrew.sh
     dest: /etc/profile.d
     mode: 0775
+
+- name: install nodejs "{{ node_version }}"
+  shell: "nodebrew use {{ node_version }}"
+
+- name: install ionic "{{ ionic_version }}"
+  become: true
+  become_method: sudo
+  shell: "npm install -g ionic@{{ ionic_version }}"
+
