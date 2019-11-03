@@ -22,6 +22,7 @@ homebrew_packages:
   - { name: tmux }
   - { name: nghttp2 }
   - { name: nodebrew }
+  - { name: python3 }
 
 homebrew_cask_packages:
   - { name: virtualbox }
