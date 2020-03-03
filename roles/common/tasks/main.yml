@@ -5,5 +5,5 @@
 - include: ruby.yml
 # - include: golang.yml
 # - include: embulk.yml
-# - include: tmux.yml
+- include: tmux.yml
 # - include: node.yml

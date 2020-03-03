@@ -25,6 +25,7 @@ homebrew_packages:
   - { name: nodebrew }
   - { name: gotop }
   - { name: htop }
+  - { name: python3 }
 
 homebrew_cask_packages:
   - { name: virtualbox }
