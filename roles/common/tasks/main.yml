@@ -2,8 +2,8 @@
 # - include: homebrew.yml
 # - include: git.yml
 # - include: vagrant.yml
-# - include: ruby.yml
+- include: ruby.yml
 # - include: golang.yml
 # - include: embulk.yml
 # - include: tmux.yml
-- include: node.yml
+# - include: node.yml

@@ -2,6 +2,7 @@ homebrew_taps:
   - caskroom/fonts
   - osx-cross/avr
   - PX4/homebrew-px4
+  - cjbassi/gotop
 
 homebrew_packages:
   - { name: curl }
@@ -22,6 +23,8 @@ homebrew_packages:
   - { name: tmux }
   - { name: nghttp2 }
   - { name: nodebrew }
+  - { name: gotop }
+  - { name: htop }
 
 homebrew_cask_packages:
   - { name: virtualbox }
